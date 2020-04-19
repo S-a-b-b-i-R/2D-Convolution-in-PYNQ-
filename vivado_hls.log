@@ -1,0 +1,129 @@
+@I [LIC-101] Checked out feature [VIVADO_HLS]
+@I [HLS-10] Running 'C:/Xilinx/Vivado_HLS/2014.2/bin/unwrapped/win64.o/vivado_hls.exe'
+            for user 'sabbi' on host 'desktop-7797fgt' (Windows NT_amd64 version 6.2) on Fri Dec 27 10:57:27 +0800 2019
+            in directory 'C:/Vivaldo_HLS_Tutorial/sabbir'
+@I [HLS-10] Opening project 'C:/Vivaldo_HLS_Tutorial/sabbir/CONV'.
+@I [HLS-10] Adding design file '2dconv.cpp' to the project
+@I [HLS-10] Adding design file '2dconv.hpp' to the project
+@I [HLS-10] Adding design file 'buffer.hpp' to the project
+@I [HLS-10] Adding design file 'define.hpp' to the project
+@I [HLS-10] Adding test bench file '2dconv.hpp' to the project
+@I [HLS-10] Adding test bench file 'define.hpp' to the project
+@I [HLS-10] Adding test bench file 'test.cpp' to the project
+@I [HLS-10] Opening solution 'C:/Vivaldo_HLS_Tutorial/sabbir/CONV/solution1'.
+@I [SYN-201] Setting up clock 'default' with a period of 10ns.
+@I [HLS-10] Setting target device to 'xc7k160tfbg484-2'
+@I [SYN-201] Setting up clock 'default' with a period of 10ns.
+@I [HLS-10] Analyzing design file '2dconv.cpp' ... 
+@I [HLS-10] Validating synthesis directives ...
+@I [HLS-10] Starting code transformations ...
+@I [XFORM-603] Inlining function 'ap_linebuffer<signed char, 3, 482>::shift_up' into 'HW_2DConv_Mmap_3' (2dconv.cpp:146).
+@I [XFORM-603] Inlining function 'ap_linebuffer<signed char, 3, 482>::shift_up' into 'HW_2DConv_Mmap_3' (2dconv.cpp:144).
+@I [XFORM-603] Inlining function 'ap_linebuffer<signed char, 3, 482>::insert_bottom' into 'HW_2DConv_Mmap_3' (2dconv.cpp:147).
+@I [XFORM-603] Inlining function 'ap_linebuffer<signed char, 3, 482>::insert_bottom' into 'HW_2DConv_Mmap_3' (2dconv.cpp:145).
+@I [XFORM-603] Inlining function 'ap_window<signed char, 3, 3>::shift_right' into 'HW_2DConv_Mmap_3' (2dconv.cpp:155).
+@I [XFORM-603] Inlining function 'ap_window<signed char, 3, 3>::shift_right' into 'HW_2DConv_Mmap_3' (2dconv.cpp:151).
+@I [XFORM-603] Inlining function 'ap_linebuffer<signed char, 3, 482>::getval' into 'HW_2DConv_Mmap_3' (2dconv.cpp:158).
+@I [XFORM-603] Inlining function 'ap_linebuffer<signed char, 3, 482>::getval' into 'HW_2DConv_Mmap_3' (2dconv.cpp:157).
+@I [XFORM-603] Inlining function 'ap_linebuffer<signed char, 3, 482>::getval' into 'HW_2DConv_Mmap_3' (2dconv.cpp:156).
+@I [XFORM-603] Inlining function 'ap_linebuffer<signed char, 3, 482>::getval' into 'HW_2DConv_Mmap_3' (2dconv.cpp:154).
+@I [XFORM-603] Inlining function 'ap_linebuffer<signed char, 3, 482>::getval' into 'HW_2DConv_Mmap_3' (2dconv.cpp:153).
+@I [XFORM-603] Inlining function 'ap_linebuffer<signed char, 3, 482>::getval' into 'HW_2DConv_Mmap_3' (2dconv.cpp:152).
+@I [XFORM-603] Inlining function 'ap_window<signed char, 3, 3>::insert' into 'HW_2DConv_Mmap_3' (2dconv.cpp:158).
+@I [XFORM-603] Inlining function 'ap_window<signed char, 3, 3>::insert' into 'HW_2DConv_Mmap_3' (2dconv.cpp:157).
+@I [XFORM-603] Inlining function 'ap_window<signed char, 3, 3>::insert' into 'HW_2DConv_Mmap_3' (2dconv.cpp:156).
+@I [XFORM-603] Inlining function 'ap_window<signed char, 3, 3>::insert' into 'HW_2DConv_Mmap_3' (2dconv.cpp:154).
+@I [XFORM-603] Inlining function 'ap_window<signed char, 3, 3>::insert' into 'HW_2DConv_Mmap_3' (2dconv.cpp:153).
+@I [XFORM-603] Inlining function 'ap_window<signed char, 3, 3>::insert' into 'HW_2DConv_Mmap_3' (2dconv.cpp:152).
+@I [XFORM-603] Inlining function 'ap_window<signed char, 3, 3>::getval' into 'HW_2DConv_Mmap_3' (2dconv.cpp:178).
+@I [XFORM-603] Inlining function 'ap_window<signed char, 3, 3>::getval' into 'HW_2DConv_Mmap_3' (2dconv.cpp:178).
+@I [XFORM-603] Inlining function 'ap_window<signed char, 3, 3>::getval' into 'HW_2DConv_Mmap_3' (2dconv.cpp:166).
+@I [XFORM-603] Inlining function 'ap_window<signed char, 3, 3>::getval' into 'HW_2DConv_Mmap_3' (2dconv.cpp:166).
+@I [HLS-10] Checking synthesizability ...
+@I [XFORM-502] Unrolling all sub-loops inside loop 'COL_LOOP' (2dconv.cpp:70) in function 'HW_2DConv_Mmap_3' for pipelining.
+@I [XFORM-501] Unrolling loop 'Loop-3.1.1' (./buffer.hpp:70) in function 'HW_2DConv_Mmap_3' completely.
+@I [XFORM-501] Unrolling loop 'Loop-3.1.2' (./buffer.hpp:70) in function 'HW_2DConv_Mmap_3' completely.
+@I [XFORM-501] Unrolling loop 'Loop-3.1.3' (./buffer.hpp:180) in function 'HW_2DConv_Mmap_3' completely.
+@I [XFORM-501] Unrolling loop 'Loop-3.1.3.1' (./buffer.hpp:182) in function 'HW_2DConv_Mmap_3' completely.
+@I [XFORM-501] Unrolling loop 'Loop-3.1.4' (./buffer.hpp:180) in function 'HW_2DConv_Mmap_3' completely.
+@I [XFORM-501] Unrolling loop 'Loop-3.1.4.1' (./buffer.hpp:182) in function 'HW_2DConv_Mmap_3' completely.
+@I [XFORM-501] Unrolling loop 'Loop-3.1.5' (2dconv.cpp:163) in function 'HW_2DConv_Mmap_3' completely.
+@I [XFORM-501] Unrolling loop 'Loop-3.1.5.1' (2dconv.cpp:164) in function 'HW_2DConv_Mmap_3' completely.
+@I [XFORM-101] Partitioning array 'filter_buffer'  in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'filter_buffer2'  in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'window_buffer2.M' (2dconv.cpp:133) in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'window_buffer.M' (2dconv.cpp:132) in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'line_buffer2.M' (2dconv.cpp:129) in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'line_buffer.M' (2dconv.cpp:128) in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'filter_buffer.0'  in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'filter_buffer.1'  in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'filter_buffer.2'  in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'filter_buffer2.0'  in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'filter_buffer2.1'  in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'filter_buffer2.2'  in dimension 1 completely.
+@I [XFORM-102] Automatically partitioning small array 'window_buffer.M.0' (2dconv.cpp:132) completely based on array size.
+@I [XFORM-102] Automatically partitioning small array 'window_buffer.M.1' (2dconv.cpp:132) completely based on array size.
+@I [XFORM-102] Automatically partitioning small array 'window_buffer.M.2' (2dconv.cpp:132) completely based on array size.
+@I [XFORM-102] Automatically partitioning small array 'window_buffer2.M.0' (2dconv.cpp:133) completely based on array size.
+@I [XFORM-102] Automatically partitioning small array 'window_buffer2.M.1' (2dconv.cpp:133) completely based on array size.
+@I [XFORM-102] Automatically partitioning small array 'window_buffer2.M.2' (2dconv.cpp:133) completely based on array size.
+@I [XFORM-101] Partitioning array 'window_buffer.M.0' (2dconv.cpp:132) in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'window_buffer.M.1' (2dconv.cpp:132) in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'window_buffer.M.2' (2dconv.cpp:132) in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'window_buffer2.M.0' (2dconv.cpp:133) in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'window_buffer2.M.1' (2dconv.cpp:133) in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'window_buffer2.M.2' (2dconv.cpp:133) in dimension 1 completely.
+@I [XFORM-401] Performing if-conversion on hyperblock in function 'HW_2DConv_Mmap_3'... converting 11 basic blocks.
+@I [XFORM-401] Performing if-conversion on hyperblock in function 'HW_2DConv_Mmap_3'... converting 11 basic blocks.
+@I [XFORM-401] Performing if-conversion on hyperblock from (2dconv.cpp:136:44) to (2dconv.cpp:161:4) in function 'HW_2DConv_Mmap_3'... converting 3 basic blocks.
+@I [XFORM-401] Performing if-conversion on hyperblock from (2dconv.cpp:166:46) to (2dconv.cpp:193:4) in function 'HW_2DConv_Mmap_3'... converting 55 basic blocks.
+@I [XFORM-11] Balancing expressions in function 'HW_2DConv_Mmap_3' (2dconv.cpp:97)...16 expression(s) balanced.
+@I [XFORM-541] Flattening a loop nest 'ROW_LOOP' (2dconv.cpp:35) in function 'HW_2DConv_Mmap_3'.
+@I [HLS-111] Elapsed time: 25.029 seconds; current memory usage: 63.4 MB.
+@I [HLS-10] Starting hardware synthesis ...
+@I [HLS-10] Synthesizing 'HW_2DConv_Mmap_3' ...
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Scheduling module 'HW_2DConv_Mmap_3' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [SCHED-11] Starting scheduling ...
+@I [SCHED-61] Pipelining loop 'memcpy.filter_buffer.pixel_in'.
+@I [SCHED-61] Pipelining result: Target II: 1, Final II: 1, Depth: 8.
+@I [SCHED-61] Pipelining loop 'memcpy.filter_buffer2.pixel_in2'.
+@I [SCHED-61] Pipelining result: Target II: 1, Final II: 1, Depth: 8.
+@I [SCHED-61] Pipelining loop 'ROW_LOOP_COL_LOOP'.
+@I [SCHED-61] Pipelining result: Target II: 1, Final II: 1, Depth: 13.
+@I [SCHED-11] Finished scheduling.
+@I [HLS-111] Elapsed time: 1.072 seconds; current memory usage: 70.1 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Exploring micro-architecture for module 'HW_2DConv_Mmap_3' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [BIND-100] Starting micro-architecture generation ...
+@I [BIND-101] Performing variable lifetime analysis.
+@I [BIND-101] Exploring resource sharing.
+@I [BIND-101] Binding ...
+@I [BIND-100] Finished micro-architecture generation.
+@I [HLS-111] Elapsed time: 0.514 seconds; current memory usage: 70.1 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Generating RTL for module 'HW_2DConv_Mmap_3' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [RTGEN-500] Setting interface mode on port 'HW_2DConv_Mmap_3/user_axi_in' to 'm_axi'.
+@I [RTGEN-500] Setting interface mode on port 'HW_2DConv_Mmap_3/user_axi_in2' to 'm_axi'.
+@I [RTGEN-500] Setting interface mode on port 'HW_2DConv_Mmap_3/user_axi_out' to 'm_axi'.
+@I [RTGEN-500] Setting interface mode on port 'HW_2DConv_Mmap_3/user_axi_out2' to 'm_axi'.
+@I [RTGEN-500] Setting interface mode on port 'HW_2DConv_Mmap_3/pixel_in' to 's_axilite & ap_none' (register).
+@I [RTGEN-500] Setting interface mode on port 'HW_2DConv_Mmap_3/pixel_in2' to 's_axilite & ap_none' (register).
+@I [RTGEN-500] Setting interface mode on port 'HW_2DConv_Mmap_3/pixel_out' to 's_axilite & ap_none' (register).
+@I [RTGEN-500] Setting interface mode on port 'HW_2DConv_Mmap_3/pixel_out2' to 's_axilite & ap_none' (register).
+@I [RTGEN-500] Setting interface mode on port 'HW_2DConv_Mmap_3/addr_reserved' to 's_axilite & ap_none' (register).
+@I [RTGEN-500] Setting interface mode on function 'HW_2DConv_Mmap_3' to 's_axilite & ap_ctrl_hs' (register).
+@I [RTGEN-100] Generating core module 'HW_2DConv_Mmap_3_urem_4ns_4ns_4_7': 2 instance(s).
+@I [RTGEN-100] Finished creating RTL model for 'HW_2DConv_Mmap_3'.
+@I [HLS-111] Elapsed time: 0.562 seconds; current memory usage: 73.2 MB.
+@I [RTMG-282] Generating pipelined core: 'HW_2DConv_Mmap_3_urem_4ns_4ns_4_7_div'
+@I [RTMG-278] Implementing memory 'HW_2DConv_Mmap_3_line_buffer_M_0_ram' using block RAMs.
+@I [HLS-10] Finished generating all RTL models.
+@I [WSYSC-301] Generating RTL SystemC for 'HW_2DConv_Mmap_3'.
+@I [WVHDL-304] Generating RTL VHDL for 'HW_2DConv_Mmap_3'.
+@I [WVLOG-307] Generating RTL Verilog for 'HW_2DConv_Mmap_3'.
+@I [HLS-112] Total elapsed time: 29.818 seconds; peak memory usage: 73.2 MB.
+@I [LIC-101] Checked in feature [VIVADO_HLS]
